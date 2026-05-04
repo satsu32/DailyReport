@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ログイン | 日報システム</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+<script src="assets/js/firebase-config.js"></script>
+
+</head>
+<body>
+
+<div class="auth-container">
+  <h1 class="title">日報システム</h1>
+
+  <div class="auth-box">
+
+    <div class="tabs">
+      <button class="tab active" id="loginTab">ログイン</button>
+      <button class="tab" id="signupTab">新規登録</button>
+    </div>
+
+    <div id="loginForm" class="form active">
+      <input type="email" id="loginEmail" placeholder="メールアドレス">
+      <input type="password" id="loginPassword" placeholder="パスワード">
+      <button class="btn" id="loginBtn">ログイン</button>
+      <p class="msg" id="loginMsg"></p>
+    </div>
+
+    <div id="signupForm" class="form">
+      <input type="email" id="signupEmail" placeholder="メールアドレス">
+      <input type="password" id="signupPassword" placeholder="パスワード">
+      <button class="btn" id="signupBtn">アカウント作成</button>
+      <p class="msg" id="signupMsg"></p>
+    </div>
+
+  </div>
+</div>
+
+<script src="assets/js/auth.js"></script>
+
+</body>
+</html>
 
