@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>日報入力</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+<script src="assets/js/firebase-config.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+
+  <h1>日報入力</h1>
+  <p id="userInfo"></p>
+
+  <div class="box">
+    <label>作業内容</label>
+    <textarea id="task" rows="4"></textarea>
+
+    <label>作業時間（h）</label>
+    <input id="hours" type="number" step="0.5">
+
+    <label>写真</label>
+    <input id="photo" type="file" accept="image/*">
+
+    <button class="btn" id="submitBtn">送信</button>
+    <p id="result"></p>
+  </div>
+
+  <p><a href="list.html">日報一覧へ</a></p>
+  <button class="btn logout" id="logoutBtn">ログアウト</button>
+
+</div>
+
+<script src="assets/js/api.js"></script>
+<script src="assets/js/ui.js"></script>
+
+</body>
+</html>
 
