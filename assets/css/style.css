@@ -1,1 +1,52 @@
+body {
+  margin: 0;
+  background: #f2f4f7;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-bottom: 24px;
+}
+
+input, textarea, button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.btn {
+  background: #0078ff;
+  color: #fff;
+  border: none;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.logout {
+  background: #d9534f;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
 
